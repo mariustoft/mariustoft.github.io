@@ -1,0 +1,9 @@
+body{background-color:#0A192F;color:#F5F7FA;font-family:Inter,Arial,sans-serif;margin:0;line-height:1.6;}
+a{color:#64FFDA;}
+nav{background:#0A192F;padding:1rem;text-align:center;}
+nav a{color:#64FFDA;margin:0 0.5rem;text-decoration:none;}
+main,header,section,footer{max-width:800px;margin:0 auto;padding:2rem;}
+footer{text-align:center;font-size:0.9rem;}
+ul{padding-left:1.2rem;}
+form input,form textarea{width:100%;max-width:400px;}
+button{background:#64FFDA;color:#0A192F;border:none;padding:0.5rem 1rem;cursor:pointer;}
