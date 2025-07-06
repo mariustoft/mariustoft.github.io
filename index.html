@@ -1,55 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marius Toft - Full-Stack Engineer</title>
-<link rel="stylesheet" href="style.css">
-<style>
-.hero{padding-top:4rem;padding-bottom:4rem;text-align:center;}
-.stats{display:flex;justify-content:space-around;flex-wrap:wrap;}
-.stat{margin:1rem;font-size:1.2rem;}
-.projects{display:flex;flex-direction:column;gap:2rem;}
-.testimonial{font-style:italic;margin-top:2rem;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marius Toft | Full-Stack Engineer & Edge-AI Maker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<nav>
- <a href="/">Home</a>
- <a href="about.html">About</a>
- <a href="experience.html">Experience</a>
- <a href="projects.html">Projects</a>
- <a href="media.html">Media</a>
- <a href="contact.html">Contact</a>
-</nav>
-<header class="hero">
- <h1>Hi, I'm Marius Toft – a Full‑Stack Engineer crafting high‑performance, user‑centric web products.</h1>
- <p><a href="projects.html">Explore my work</a> &nbsp;&nbsp; <a href="MariusToft_CV.pdf">Download CV</a></p>
-</header>
-<section>
- <h2>Quick stats</h2>
- <div class="stats">
-  <div class="stat">10+ years in production code</div>
-  <div class="stat">25 consumer‑facing projects shipped</div>
-  <div class="stat">99.9% average uptime across platforms</div>
- </div>
-</section>
-<section>
- <h2>Featured Projects</h2>
- <div class="projects">
-  <div>
-   <h3>Live Trading Dashboard</h3>
-   <p>Realtime equities data at sub‑second latency.</p>
-  </div>
-  <div>
-   <h3>E-commerce Platform</h3>
-   <p>Headless storefront powering multiple brands.</p>
-  </div>
- </div>
- <div class="testimonial">“Marius pairs deep technical skill with rare product sensitivity.” — <em>Henrik Larsen, VP Engineering @ eToro</em></div>
-</section>
-<footer>
- <p>&copy; 2024 Marius Toft</p>
-</footer>
+  <!-- ====== HERO ====== -->
+  <header class="hero">
+    <h1>Marius Toft</h1>
+    <p class="tagline">Full-Stack Engineer @ eToro Labs · Edge-AI & Web3 builder in Copenhagen</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I turn <strong>high-risk ideas into production-grade web apps</strong>—from
+      consumer fintech at <em>eToro</em> to offline-first drone platforms for agriculture and
+      SAR. My toolbox spans React/Next.js, Node & TypeScript, Solidity/CosmWasm, Docker/Nix, and edge
+      hardware (Raspberry Pi, Jetson). <br>
+      When I’m not coding you’ll catch me renovating a summer house, sailing out of Greve Marina, or testing
+      my sub-250 g UAV over Danish fields.
+    </p>
+  </section>
+
+  <!-- ====== EXPERIENCE ====== -->
+  <section id="experience" class="section">
+    <h2>Professional Evolution</h2>
+
+    <div class="job">
+      <h3>eToro Labs · Full-Stack Engineer <span>May 2024 – Present</span></h3>
+      <ul>
+        <li>Shipped React/Node micro-front-end processing <strong>1 M API calls/day</strong>.</li>
+        <li>Introduced TypeScript domain models → production bugs down <strong>30 %</strong> in two quarters.</li>
+        <li>Mentored three junior devs; rolled out monorepo ESLint + Prettier standard.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>IMPACT Commerce · Lead Front-End Engineer <span>Aug 2022 – Apr 2024</span></h3>
+      <ul>
+        <li>Led a squad of five on React/Next 13 storefronts; boosted conversion <strong>+22 %</strong>.</li>
+        <li>Refactored critical rendering path → Lighthouse 62 → 92.</li>
+        <li>Built company-wide Storybook design system adopted by three teams.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Merkle · Front-End Engineer <span>2020 – 2022</span></h3>
+      <ul>
+        <li>Re-platformed legacy PHP site to React SPA with Material UI design system.</li>
+        <li>Drove WCAG 2.1 audit → compliance B → AA.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects" class="section">
+    <h2>Flagship Project</h2>
+    <h3>Recon Drone System (RDS) · 2024-25</h3>
+    <p>
+      Lightweight UAV platform (&lt; 250 g) with 4K + IR camera, LoRa comms, Jetson Nano base station,
+      and offline Linux tablet. Use-cases: crop health NDVI scans, SAR trail detection, wildlife surveys.
+      <br>
+      <a href="https://github.com/your-repo" target="_blank" rel="noopener">See white-paper & code →</a>
+    </p>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section id="skills" class="section">
+    <h2>Core Skills</h2>
+    <div class="skill-grid">
+      <div><strong>Frontend</strong><br>React · Next.js · Tailwind · Storybook</div>
+      <div><strong>Backend</strong><br>Node · TypeScript · Express · GraphQL</div>
+      <div><strong>Dev & Ops</strong><br>Docker · Nix · CI/CD · GitHub Actions</div>
+      <div><strong>Web3</strong><br>Solidity · CosmWasm · Tendermint PoS</div>
+      <div><strong>Edge AI / HW</strong><br>Raspberry Pi · Jetson Nano · LoRa</div>
+      <div><strong>Soft Skills</strong><br>Technical leadership · Mentoring · Agile</div>
+    </div>
+  </section>
+
+  <!-- ====== EDUCATION ====== -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BSc Software Engineering</strong> · Aalborg University</li>
+      <li><strong>MBA Business Administration</strong> · Roskilde University</li>
+    </ul>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:marius@your-domain.dk">marius@your-domain.dk</a>  · 
+      💼 <a href="https://linkedin.com/in/mariustoft" target="_blank" rel="noopener">LinkedIn</a>  · 
+      🐙 <a href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Marius Toft · Built with plain HTML + CSS + JS
+    <button id="to-top">↑ Top</button>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
